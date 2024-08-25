@@ -200,7 +200,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./hero-bg.png);
+	background-image: url(hero-bg.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -291,7 +291,7 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img-1.png);
+	background-image: url(img-1.png);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
@@ -492,18 +492,169 @@ p {
 }
 /*End contact Section */
 
+/*Skills*/
+#Skills {
+	padding: 20px;
+	font-family: Arial, sans-serif;
+  }
+
+  #Skills h1{
+	margin-left:100px;
+	font-size: 50px;
+	margin-bottom: 20px;
+  }
+
+  .skills_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+  }
+
+  .IDicon {
+	background-image: url('Indesign.png');
+  }
+  
+  .MEicon {
+	background-image: url('MediaEncoder.png');
+  }
+  
+  .AFicon {
+	background-image: url('AfterEffects.png');
+  }
+  
+  .PPicon {
+	background-image: url('PremierPro.png');
+  }
+  
+  .PSicon {
+	background-image: url('Photoshop.png');
+  }
+  
+  .AIicon {
+	background-image: url('Ai.png');
+  }
+
+
+  #left-content {
+	width: 5%;
+	margin-left: 100px;
+  }
+
+  .icon {
+	width: 50px;
+	height: 55px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 0px;
+	border-radius: 10px;
+  }
+
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+	text-align: start;
+}
+#right-content{
+	width: 100%;
+	margin-left: 20px;
+}
+
+#right-content .line-items{
+		width: 90%;
+		height: 500px;
+}
+
+  @keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+@-moz-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+@-o-keyframes load {
+    from {
+        width: 0%;
+    }
+}
+
+.line {
+    position: relative;
+    background-color: #EEE;
+    padding: 2px;
+	height: 50px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    font-size: 18.5px;
+    color: #0b0909;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(34, 33, 33, 0.5);
+}
+
+.line::before {
+    content: attr(data-skill);
+    background-color: #ce2323b5;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+	height: 35px;
+    border-radius: inherit;
+    animation: load 2s forwards;
+    -webkit-animation: load 2s forwards;
+    -moz-animation: load 2s forwards;
+    -o-animation: load 2s forwards;
+}
+
+.bar.front::before {
+    background-color: #e99740f4;
+}
+
+.bar.back::before {
+    background-color: #3250e4;
+}
+
+.bar.learning::before {
+    width: calc(20% - 10px);
+}
+
+.bar.basic::before {
+    width: calc(40% - 10px);
+}
+
+.bar.intermediate::before {
+    width: calc(60% - 10px);
+}
+
+.bar.advanced::before {
+    width: calc(80% - 10px);
+}
+
+.bar.expert::before {
+    width: calc(100% - 10px);
+}
+/*End Skills*/
+
+
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(65deg, #29323c 0%, #485563 100%);
 }
 #footer .footer {
 	min-height: 200px;
 	flex-direction: column;
-	padding-top: 50px;
+	padding-top: 20px;
 	padding-bottom: 10px;
 }
 #footer h2 {
-	color: white;
+	color: rgb(255, 255, 255);
 	font-weight: 500;
 	font-size: 1.8rem;
 	letter-spacing: 0.1rem;
@@ -555,12 +706,12 @@ p {
 }
 @keyframes text_reveal {
 	100% {
-		color: white;
+		color: rgb(255, 254, 254);
 	}
 }
 @keyframes text_reveal_name {
 	100% {
-		color: crimson;
+		color: rgb(230, 33, 72);
 		font-weight: 500;
 	}
 }
@@ -635,6 +786,8 @@ p {
 	}
 	/* End About */
 
+
+
 	/* contact  */
 	#contact .contact {
 		flex-direction: column;
@@ -653,7 +806,7 @@ p {
 	#contact .contact-item {
 		width: 30%;
 		margin: 0;
-		flex-direction: row;
+		flex-direction: column;
 	}
 	#contact .contact-item .icon {
 		height: 100px;
@@ -662,10 +815,13 @@ p {
 	#contact .contact-item .icon img {
 		object-fit: contain;
 	}
-	#contact .contact-item .contact-info {
+	#contact .contact-item .contact-info h1{
 		width: 100%;
-		text-align: left;
-		padding-left: 20px;
+		text-align:center;
+		color: rgb(255, 255, 255);
+		font-weight: 500;
+		font-size: 1.8rem;
+		letter-spacing: 0.1rem;
 	}
 	/* End contact  */
 }
