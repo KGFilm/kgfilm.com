@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+ 
   <title>KGFilm</title>
 </head>
 
@@ -15,7 +16,7 @@
       <div class="nav-bar">
         <div class="brand">
           <a href="#hero">
-            <h1><span>K</span>aung <span>Si</span>Thu</h1>
+            <h1><span>K</span>G <span>F</span>ilm</h1>
           </a>
         </div>
         <div class="nav-list">
@@ -40,12 +41,21 @@
   <section id="hero">
     <div class="hero container">
       <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
         <h1>Kaung Si Thu<span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
+        <!-- <h1> <span></span></h1> -->
+        <h1>Graphic Designer,Video Creator,Motion &Animator<span></span></h1>
+        <a id="myPortfolio" href="Kg_Portforlio.pdf" type="button" class="cta">Portfolio</a>
       </div>
     </div>
+
+    <script>
+      // Dynamically set the download attribute using JavaScript
+      document.getElementById("myPortfolio").setAttribute('download', 'Portfolio.pdf');
+      
+      // You can also check if it's set correctly
+      console.log(document.getElementById("myPortfolio").download); // This will log 'Portfolio' to the console
+      </script>
+
   </section>
   <!-- End Hero Section  -->
 
@@ -58,160 +68,266 @@
           magni et, doloribus quod voluptate quasi molestiae magnam officiis dolorum, dolor provident atque molestias
           voluptatum explicabo!</p>
       </div>
+
+<!-- Image Slider Section -->
+<div id="image-slider" class="slider-container hidden">
+    <span id="close-slider" class="close-btn">X</span>
+    <div id="slider" class="slider">
+        <!-- Images will be loaded dynamically here -->
+    </div>
+</div>
+
+<div id="image-slider" class="image-slider">
+    <button id="close-slider">Close</button>
+    <div id="slider" class="slider">
+        <!-- Images will be dynamically loaded here -->
+    </div>
+</div>
+
+<!-- Modal for viewing images in detail -->
+<div id="image-modal" class="modal hidden">
+    <button id="prev-modal-btn" class="carousel-btn">❮❮</button>
+    <img class="modal-content" id="modal-image" alt="Modal Image">
+    <button id="next-modal-btn" class="carousel-btn">❯❯</button>
+</div>
+<!--End Image Slider-->
+
       <div class="service-bottom">
         <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <div class="icon"><img src="img-1.png" /></div>
           <h2>Visual Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed</p> 
+            <div class="Demo-section">
+              <button id="my-visual-btn" class="Demo-button">See Demo</button>
+            </div>
         </div>
+
         <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <div class="icon"><img src="img-1.png" /></div>
           <h2>Poster Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed</p> 
+            <div class="Demo-section">
+              <button id="my-poster-design" class="Demo-button">See Demo</button>
+            </div>
         </div>
+
         <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Vinyl Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <div class="icon"><img src="img-1.png" /></div>
           <h2>Commercial Design</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed
-            architecto placeat beatae tenetur officia quod</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed</p> 
+            <div class="Demo-section">
+              <button id="my-commercial-design" class="Demo-button">See Demo</button>
+            </div>
         </div>
+
+        <div class="service-item">
+          <div class="icon"><img src="img-1.png" /></div>
+          <h2>Infographic Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni voluptatem sed</p> 
+            <div class="Demo-section">
+              <button id="my-infograph-design" class="Demo-button">See Demo</button>
+            </div>
+        </div>
+
       </div>
     </div>
   </section>
   <!-- End Service Section -->
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
+<!-- Projects Section -->
+<section id="projects">
+  <div class="projects container">
+    <div class="projects-header">
+      <h1 class="section-title">Recent <span>Projects</span></h1>
+    </div>
+    <div class="all-projects">
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 1</h1>
+          <h2>Coding is Love</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+            rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+            harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+        </div>
+        <div class="project-img">
+          <img src="img-1.png" alt="img">
+        </div>
       </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 1</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="img-1.png" alt="img">
-          </div>
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 2</h1>
+          <h2>Coding is Love</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+            rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+            harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 2</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="img-1.png" alt="img">
-          </div>
+        <div class="project-img">
+          <img src="img-1.png" alt="img">
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 3</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="img-1.png" alt="img">
-          </div>
+      </div>
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 3</h1>
+          <h2>Coding is Love</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+            rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+            harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 4</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="img-1.png" alt="img">
-          </div>
+        <div class="project-img">
+          <img src="img-1.png" alt="img">
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Project 5</h1>
-            <h2>Coding is Love</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-              rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-              harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-          </div>
-          <div class="project-img">
-            <img src="img-1.png" alt="img">
-          </div>
+      </div>
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 4</h1>
+          <h2>Coding is Love</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+            rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+            harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+        </div>
+        <div class="project-img">
+          <img src="img-1.png" alt="img">
+        </div>
+      </div>
+      <div class="project-item">
+        <div class="project-info">
+          <h1>Project 5</h1>
+          <h2>Coding is Love</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+            rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
+            harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+        </div>
+        <div class="project-img">
+          <img src="img-1.png" alt="img">
         </div>
       </div>
     </div>
-  </section>
-  <!-- End Projects Section -->
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="img-2.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Graphic Designer</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
-          repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
-          exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
-          Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
-          reprehenderit libero enim!</p>
-        <a href="#" class="cta">Download Resume</a>
-      </div>
-    </div>
- </section>
-  <!-- End About Section -->
-
-<!--Skill Set-->
-<div id="Skills">
-  <h1>Skill Set</h1>
-
-  <div class="skills_container">
-
-    <div id="left-content">
-      <div class="icon IDicon"></div>
-      <div class="icon MEicon"></div>
-      <div class="icon AFicon"></div>
-      <div class="icon PPicon"></div>  
-      <div class="icon PSicon"></div>  
-      <div class="icon AIicon"></div>
-    </div>
-
-    <div id="right-content">
-      <div class="line-items">
-          <div class="line bar learning" data-skill="Indesign"></div>
-          <div class="line bar back basic" data-skill="Media Encoder"></div>
-          <div class="line bar back intermediate" data-skill="After Effects"></div>
-          <div class="line bar front advanced" data-skill="Premiere Pro"></div>
-          <div class="line bar front expert" data-skill="Photoshop"></div>
-          <div class="line bar front expert" data-skill="Illustrator"></div>
-      </div>
   </div>
+</section>
+<!-- End Projects Section -->
   
+<!-- About Section -->
+<section id="about">
+  <div class="about container">
+
+    <div class="col-right">
+      <h1 class="section-title">About <span>me</span></h1>
+      <h2>Graphic Designer</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
+        repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
+        exercitationem cumque earum omnis ipsum rem accusantium quis, quas quia, accusamus provident suscipit magni!
+        Expedita sint ad dolore, commodi labore nihil velit earum ducimus nulla quae nostrum fugit aut, deserunt
+        reprehenderit libero enim!</p>
+      <a href="#" class="cta">Download Resume</a>
+    </div>
+    
+  </div>
+</section>
+<!-- End About Section -->
+
+<!-- Skill Set -->
+<div id="skills">
+  
+  <h1 class="section-title"><span>Skill</span>Set</h1>
+
+
+  <div class="skills-container">
+    <!-- First Section -->
+  <div class="HD"><h1>GRAPHIC DESIGNS</h1>
+    <div id="first">
+      <div id="first-content">
+        <div class="icon-description">Logo Creation</div>
+        <div class="icon-description">Visual Creation</div>
+        <div class="icon-description">Vinyl Creation</div>
+        <div class="icon-description">A Creation</div>
+        <div class="icon-description">B Creation</div>
+      </div>
+
+      <div id="first-right-content">
+        <div class="circles" id="xpBarF1"></div>
+        <div class="circles" id="xpBarF2"></div>
+        <div class="circles" id="xpBarF3"></div>
+        <div class="circles" id="xpBarF4"></div>
+        <div class="circles" id="xpBarF5"></div>
+      </div>
+    </div>
+  </div>
+    <!-- Second Section -->
+    <div class="HD"><h1>VIDEO CREATION</h1>
+    <div id="second">
+      <div id="second-content">
+        <div class="icon-description">Motion Creation</div>
+        <div class="icon-description">Animation Creation</div>  
+        <div class="icon-description">1 Creation</div>  
+        <div class="icon-description">2 Creation</div>
+        <div class="icon-description">3 Creation</div>
+      </div>
+
+      <div id="second-right-content">
+        <div class="circles" id="xpBarS1"></div>
+	      <div class="circles" id="xpBarS2"></div>
+	      <div class="circles" id="xpBarS3"></div>
+	      <div class="circles" id="xpBarS4"></div>
+	      <div class="circles" id="xpBarS5"></div>
+      </div>
+      </div>
+    </div>
+
+    <!-- Third Section -->
+
+    <div class="HD"><h1>ILLUSTRATION</h1>
+    <div id="third">
+      <div id="third-content">
+        <div class="icon-description">Logo Creation</div>
+        <div class="icon-description">Visual Creation</div>  
+        <div class="icon-description">Vinyl Creation</div>  
+        <div class="icon-description">A Creation</div>
+        <div class="icon-description">B Creation</div>
+      </div>
+
+      <div id="third-right-content">
+        <div class="circles" id="xpBarT1"></div>
+        <div class="circles" id="xpBarT2"></div>
+        <div class="circles" id="xpBarT3"></div>
+        <div class="circles" id="xpBarT4"></div>
+        <div class="circles" id="xpBarT5"></div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fourth Section (Applications) Outside of Skills Container -->
+<div class="lower">
+  
+  <h1 class="selection-title">Applications</h1>
+
+  <div id="fourth">
+
+
+    <div class="fourth-right-content">
+      <div class="app-icons">
+        <div class="app-icon">
+          <img src="AfterEffects.png" alt="Icon 1">
+        </div>
+        <div class="app-icon">
+          <img src="PremierPro.png" alt="Icon 2">
+        </div>
+        <div class="app-icon">
+          <img src="Photoshop.png" alt="Icon 3">
+        </div>
+        <div class="app-icon">
+          <img src="Ai.png" alt="Icon 4">
+        </div>
+        <div class="app-icon">
+          <img src="Blender.png" alt="Icon 5">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 
-<!--End Skill Set-->
-
+<!-- End Skill Set -->
 
   <!-- Contact Section -->
   <section id="contact">
@@ -263,7 +379,7 @@
           <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
         </div>
         <div class="social-item">
-          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
+          <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/youtube.png"/> </a>
         </div>
         <div class="social-item">
           <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
